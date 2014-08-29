@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block title %}
+联系我们
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" type="text/css" id="main-css">
+{% endblock %}
+{% block body %}
+
+<div id="map-container">
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=envato&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=40.052282,86.572266&amp;ie=UTF8&amp;hq=envato&amp;hnear=&amp;radius=15000&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+</div>
+
+<!-- content begin -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Get in touch with us now!</h4>
+                Feel free to contact us by contact to get more information.<br />
+                <br />
+                <div class="contact_form_holder form-group">
+                    <form id="contact" class="row" name="form1" method="post" action="#">
+
+                        <div class="col-md-6">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="name" id="name" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Email <span class="req">*</span></label>
+                            <input type="text" class="form-control" name="email" id="email" />
+                            <div id="error_email" class="error">Please insert your email.</div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label>Message <span class="req">*</span></label>
+                            <textarea cols="10" rows="10" name="message" id="message" class="form-control"></textarea>
+                            <div id="error_message" class="error">Please insert your message.</div>
+                            <div id="mail_success" class="success">Thank you. Your message has been sent.</div>
+                            <div id="mail_failed" class="error">Error, email not sent</div>
+                            &nbsp;
+                            <p id="btnsubmit">
+                                <input type="submit" id="send" value="Send Now" class="btn btn-default" />
+                            </p>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div id="sidebar" class="col-md-3">
+                <!-- widget category -->
+                <!-- widget tags -->
+                <!-- widget text -->
+                <div class="widget widget-text">
+                    <h4>Our Address</h4>
+                    <address>
+                        100 Mainstreet Center, Sydney
+                        <span><strong>Phone:</strong>(208) 333 9296</span>
+                        <span><strong>Fax:</strong>(208) 333 9298</span>
+                        <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@example.com</a></span>
+                        <span><strong>Web:</strong><a href="#test">http://example.com</a></span>
+                    </address>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="map">
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- content close -->
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+{% block title %}
+服务
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" type="text/css" id="main-css">
+{% endblock %}
+
+{% block body %}
+<!-- subheader begin -->
+<div id="subheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Services</h1>
+                <span>We Provide Best Solutions.</span>
+                <ul class="crumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="sep">/</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- subheader close -->
+
+<!-- content begin -->
+<div id="content">
+    <div class="container">
+        <div class="block-title text-center">
+            <h1>Complete Solutions For Your Idea</h1>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- feature box begin -->
+                    <div class="feature-box-small-icon col-md-6">
+                        <div class="inner">
+                            <i class="fa fa-rocket circle"></i>
+
+                            <div class="text">
+                                <h3>Shared Hosting</h3>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feature box close -->
+
+                    <!-- feature box begin -->
+                    <div class="feature-box-small-icon col-md-6">
+                        <div class="inner">
+                            <i class="fa fa-bars circle"></i>
+
+                            <div class="text">
+                                <h3>Virtual Server</h3>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feature box close -->
+                    <div class="spacer-single"></div>
+                    <!-- feature box begin -->
+                    <div class="feature-box-small-icon col-md-6">
+                        <div class="inner">
+                            <i class="fa fa-thumbs-up circle"></i>
+
+                            <div class="text">
+                                <h3>Website Development</h3>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feature box close -->
+
+                    <!-- feature box begin -->
+                    <div class="feature-box-small-icon col-md-6">
+                        <div class="inner">
+                            <i class="fa fa-tablet circle"></i>
+
+                            <div class="text">
+                                <h3>Mobile Application</h3>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feature box close -->
+
+                    <div class="spacer-single"></div>
+                    <div class="de_testi col-md-12">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.</p>
+                        </blockquote>
+                        <div class="de_testi_by">
+                            <div class="de_testi_pic">
+                                <img src="images/testi_pic (1).jpg" alt="" class="img-circle">
+                            </div>
+                            <div class="de_testi_company">
+                                <strong>John Doe</strong>, Microsoft
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Why Choose Us</h3>
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">High
+                                    Performance</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>
+                                    <img src="images/feature-pic-1.jpg" alt="" class="img-responsive"></p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Traffic Booster
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    <img src="images/feature-pic-2.jpg" alt="" class="img-responsive"></p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Reliable
+                                    Hardware
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    <img src="images/feature-pic-3.jpg" alt="" class="img-responsive"></p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- content close -->
+{% endblock %}
